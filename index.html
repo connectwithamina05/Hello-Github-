@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MILU — закуски и гастробоксы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero" id="top">
+    <nav class="nav">
+      <div class="nav-pill nav-left">
+        <a class="logo" href="#top" aria-label="MILU">
+          <img src="assets/logo.svg" alt="MILU">
+        </a>
+        <span class="location">
+          <svg viewBox="0 0 12 15" width="11" height="14" aria-hidden="true">
+            <path
+              d="M6 0C2.96 0 .5 2.46.5 5.5c0 3.85 4.62 8.72 4.82 8.92a.95.95 0 0 0 1.36 0C6.88 14.22 11.5 9.35 11.5 5.5 11.5 2.46 9.04 0 6 0zm0 7.7a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4z"
+              fill="#f28396" />
+          </svg>
+          Саратов
+        </span>
+        <button class="mobile-toggle" id="toggle" aria-label="Открыть меню">☰</button>
+        <div class="navlinks" id="navlinks">
+          <a href="#menu" class="nav-menu-link">Меню <svg viewBox="0 0 10 6" width="8" height="5" aria-hidden="true">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+          <a href="#benefits">Акции</a>
+          <a href="#delivery">Доставка и оплата</a>
+          <a href="#about">О нас</a>
+        </div>
+      </div>
+
+      <div class="nav-pill nav-right">
+        <a class="phone" href="tel:+78452906060">8 (8452) 90-60-60</a>
+        <div class="nav-icons">
+          <button class="iconbtn" id="favorites" aria-label="Избранное">
+            <img src="assets/icon-heart.svg" alt="" aria-hidden="true">
+            <small id="favCount" data-count="0">0</small>
+          </button>
+          <button class="iconbtn" id="cartBtn" aria-label="Корзина">
+            <img src="assets/icon-cart.svg" alt="" aria-hidden="true">
+            <small id="cartCount" data-count="0">0</small>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-food hero-food-left"><img src="assets/food-8.jpg" alt="Тарталетка"></div>
+    <div class="hero-food hero-food-right"><img src="assets/food-9.jpg" alt="Закуска"></div>
+
+    <div class="hero-inner">
+      <h1>закуски и гастробоксы<br><em>с доставкой в саратове</em></h1>
+      <p>Красивая подача, свежие продукты и доставка точно ко времени.<br>Просто выберите блюда — мы соберём идеальный
+        стол</p>
+      <div class="actions">
+        <a class="button primary" href="#menu">Перейти в меню</a>
+        <a class="button outline" href="#delivery">Оставить заявку</a>
+      </div>
+    </div>
+
+    <div class="round-sticker" aria-label="Твоя улыбка — это мило">
+      <img class="round-sticker-text" src="assets/ribbon-hero-left.svg" alt="" aria-hidden="true">
+      <div class="round-sticker-inner">
+        <img src="assets/round-sticker.svg" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </header>
+
+  <div class="ribbon ribbon-first" aria-hidden="true">
+    <img src="assets/ribbon-1.svg" alt="">
+    <span class="sr-only">твоя улыбка — это мило</span>
+  </div>
+
+  <main>
+    <section class="occasions">
+      <article>
+        <img src="assets/occasion-1.jpg" alt="День рождения">
+        <div>
+          <h3>ДЛЯ ДНЯ<br>РОЖДЕНИЯ</h3>
+          <p>готовые наборы закусок, чтобы гости были сыты, а вы отдыхали</p>
+        </div>
+      </article>
+      <article>
+        <img src="assets/occasion-2.jpg" alt="Корпоратив">
+        <div>
+          <h3>ДЛЯ<br>КОРПОРАТИВА</h3>
+          <p>эффектная подача и удобный формат «на зубок»</p>
+        </div>
+      </article>
+      <article>
+        <img src="assets/occasion-3.jpg" alt="Семейный праздник">
+        <div>
+          <h3>ДЛЯ СЕМЕЙНОГО<br>ПРАЗДНИКА</h3>
+          <p>разнообразие вкусов, которые понравятся и взрослым, и детям</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <span class="eyebrow">почему выбирают MILU</span>
+
+      <div class="benefits-title-wrap">
+        <img class="spark-lines" src="assets/sparks.svg" alt="" aria-hidden="true">
+
+        <h2>мы всё продумали<br>до мелочей</h2>
+
+        <div class="sticker-meat" aria-hidden="true">
+          <img src="assets/sticker-meat.png" alt="">
+        </div>
+
+        <div class="sticker-fresh-group" aria-hidden="true">
+          <img class="sticker-tomato" src="assets/sticker-tomato.png" alt="">
+          <img class="sticker-shrimp" src="assets/sticker-shrimp.png" alt="">
+        </div>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="purple">
+          <span>01</span>
+          <h3>забота<br>о вашем<br>здоровье</h3>
+          <p>Мы добавили в меню позиции со сниженным содержанием сахара, чтобы вам было легче выбирать и просто
+            наслаждаться — без лишних мыслей о калориях</p>
+        </article>
+        <article class="orange">
+          <span>02</span>
+          <h3>красивая<br>фуршетная<br>подача</h3>
+          <p>Мы уделяем внимание не только вкусу, но и внешнему виду. Наши гастробоксы и закуски выглядят эстетично и
+            украшают любое мероприятие</p>
+          <img src="assets/food-7.jpg" alt="Закуски">
+        </article>
+        <article class="pink">
+          <span>03</span>
+          <h3>готовые<br>решения для<br>любого<br>события</h3>
+          <p>День рождения, корпоратив, встреча с друзьями или семейный праздник — у нас есть готовые наборы, которые
+            легко заказать и подать на стол</p>
+        </article>
+        <article class="yellow">
+          <span>04</span>
+          <h3>удобный<br>заказ<br>и доставка</h3>
+          <p>Оставьте заявку на сайте, и мы поможем подобрать подходящий набор. Доставим заказ вовремя, чтобы вы могли
+            спокойно готовиться к своему событию</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="ribbon ribbon-second" aria-hidden="true">
+      <img src="assets/ribbon-2.svg" alt="">
+      <span class="sr-only">разнообразное меню, где каждый подберёт что-то по своему вкусу</span>
+    </div>
+
+    <section class="menu-section" id="menu">
+      <h2>МЕНЮ</h2>
+      <div class="catalog">
+        <aside class="filters">
+          <h4>Категория</h4>
+          <div id="categoryFilters"></div>
+          <h4>Особенности</h4>
+          <div id="featureFilters"></div>
+        </aside>
+        <div class="products-area">
+          <div class="catalog-top">
+            <span id="resultCount">Найдено: <b>22</b></span>
+            <button id="resetFilters">× Тарталетки</button>
+          </div>
+          <div class="products" id="products"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-info" id="delivery">
+      <h2>Доставка и оплата</h2>
+      <p>Доставляем закуски по Саратову. Для уточнения условий, времени и стоимости доставки свяжитесь с нами.</p>
+      <a class="button primary" href="tel:+78452906060">Связаться с нами</a>
+    </section>
+  </main>
+
+  <footer id="about">
+    <b>MILU</b>
+    <span>Закуски и гастробоксы с любовью ♡</span>
+    <a href="#top">Наверх ↑</a>
+  </footer>
+
+  <dialog id="drawer">
+    <div class="drawer-head">
+      <h2 id="drawerTitle">Корзина</h2>
+      <button id="closeDrawer" aria-label="Закрыть">✕</button>
+    </div>
+    <div id="drawerContent"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
